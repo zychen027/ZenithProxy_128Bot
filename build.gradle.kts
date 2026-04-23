@@ -1,8 +1,8 @@
 plugins {
     `java-library`
-    id("org.graalvm.buildtools.native") version "1.0.0"
+    id("org.graalvm.buildtools.native") version "1.1.0"
     id("com.gradleup.shadow") version "9.4.1"
-    id("io.freefair.lombok") version "9.2.0"
+    id("io.freefair.lombok") version "9.4.0"
     `maven-publish`
 }
 
@@ -26,7 +26,7 @@ repositories {
     mavenLocal()
 }
 
-val mcplVersion = "1.21.4.49"
+val mcplVersion = "26.1.2.5"
 dependencies {
     api("com.github.rfresh2:JDA:6.4.31") {
         exclude(group = "club.minnced")
@@ -76,7 +76,7 @@ dependencies {
     api("com.zaxxer:HikariCP:7.0.2")
     api("org.postgresql:postgresql:42.7.10")
     api("org.jdbi:jdbi3-postgres:3.52.1")
-    api("com.google.guava:guava:33.5.0-jre")
+    api("com.google.guava:guava:33.6.0-jre")
     api("ch.qos.logback:logback-classic:1.5.32")
     api("org.slf4j:slf4j-api:2.0.17")
     api("org.slf4j:jul-to-slf4j:2.0.17")
@@ -89,12 +89,12 @@ dependencies {
 
     testImplementation(platform("org.junit:junit-bom:6.0.3"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    testImplementation("org.testcontainers:testcontainers:2.0.4")
-    testImplementation("org.testcontainers:testcontainers-junit-jupiter:2.0.4")
+    testImplementation("org.testcontainers:testcontainers:2.0.5")
+    testImplementation("org.testcontainers:testcontainers-junit-jupiter:2.0.5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     compileOnly("com.google.auto.service:auto-service-annotations:1.1.1")
     annotationProcessor("com.google.auto.service:auto-service:1.1.1")
-    compileOnly("org.graalvm.sdk:nativeimage:25.0.2")
+    compileOnly("org.graalvm.sdk:nativeimage:25.0.3")
 }
 
 lombok {
