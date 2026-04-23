@@ -654,6 +654,13 @@ public final class Config {
 					public boolean enabled = false;
 					public String prefix = "Bot_";
 					public String password = "";
+					// Target coordinates for the 4 vault positions
+					public double targetX1 = 0, targetY1 = 0, targetZ1 = 0;
+					public double targetX2 = 0, targetY2 = 0, targetZ2 = 0;
+					public double targetX3 = 0, targetY3 = 0, targetZ3 = 0;
+					public double targetX4 = 0, targetY4 = 0, targetZ4 = 0;
+					// Target yaw direction: south, north, west, east
+					public String targetYaw = "south";
 				}
 
 				public static final class AutoVault {
