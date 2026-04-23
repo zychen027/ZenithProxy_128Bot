@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.feature.deathmessages.DeathMessageParserTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:15:14.183Z" hostname="DESKTOP-IU9580N" time="0.9">
+  <properties/>
+  <testcase name="burnedApartByZombieTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.255"/>
+  <testcase name="pvpKillerReversedAndNamedWeapon()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.029"/>
+  <testcase name="namedWeaponWithSameWordAsInSchema()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.01"/>
+  <testcase name="witherSkeletalWarriorMob()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="namedAndWieldingMob()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="apostropheTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.003"/>
+  <testcase name="pvpKillerAndWeapon()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.004"/>
+  <testcase name="witheredAway()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="componentPlayercountTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.39"/>
+  <testcase name="byAZombie()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.008"/>
+  <testcase name="thickPasteByZombieWielding()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="assassinatedByPillagersTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.006"/>
+  <testcase name="pushedByMobTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.004"/>
+  <testcase name="weaponInMiddleOfSchemaTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.004"/>
+  <testcase name="stray()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="zombiePigman()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.004"/>
+  <testcase name="zombiePigmen()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="basicSuicide()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.004"/>
+  <testcase name="bedrockUserTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.007"/>
+  <testcase name="mobKill()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="zombieVillager()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.003"/>
+  <testcase name="mobTrampleTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.005"/>
+  <testcase name="namedMobKill()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.004"/>
+  <testcase name="pvpKillTest()" classname="com.zenith.feature.deathmessages.DeathMessageParserTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

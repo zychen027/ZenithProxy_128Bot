@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.feature.player.RaytraceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:14:05.975Z" hostname="DESKTOP-IU9580N" time="0.458">
+  <properties/>
+  <testcase name="noIntersectionTestRealData()" classname="com.zenith.feature.player.RaytraceTest" time="0.273"/>
+  <testcase name="failsWithLargeZ1toZ2Diff()" classname="com.zenith.feature.player.RaytraceTest" time="0.015"/>
+  <testcase name="passesWithSmallZ1toZ2Diff()" classname="com.zenith.feature.player.RaytraceTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

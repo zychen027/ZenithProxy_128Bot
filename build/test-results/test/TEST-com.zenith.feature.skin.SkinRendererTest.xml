@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.feature.skin.SkinRendererTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:15:19.420Z" hostname="DESKTOP-IU9580N" time="0.391">
+  <properties/>
+  <testcase name="testRenderHead()" classname="com.zenith.feature.skin.SkinRendererTest" time="0.314"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

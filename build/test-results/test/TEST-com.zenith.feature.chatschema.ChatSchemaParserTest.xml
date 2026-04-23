@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.feature.chatschema.ChatSchemaParserTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:14:09.796Z" hostname="DESKTOP-IU9580N" time="11.867">
+  <properties/>
+  <testcase name="testEssentialsWhisperInbound()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="11.431"/>
+  <testcase name="test2b2tWhisperOutgoing()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="0.011"/>
+  <testcase name="testDoubleWordWildcardMatch()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="0.012"/>
+  <testcase name="test2b2tBedrockPublicChat()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="0.042"/>
+  <testcase name="testEssentialsWithGroupPublicChat()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="0.007"/>
+  <testcase name="test2b2tPublicChat()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="0.002"/>
+  <testcase name="testEssentialsWhisperOutgoing()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="0.003"/>
+  <testcase name="test2b2tWhisperInbound()" classname="com.zenith.feature.chatschema.ChatSchemaParserTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

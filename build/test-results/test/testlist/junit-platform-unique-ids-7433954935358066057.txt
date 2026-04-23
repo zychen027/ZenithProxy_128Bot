@@ -1,0 +1,2 @@
+[engine:junit-jupiter]/[class:com.zenith.RotationRangeCheckTest]/[method:pitchInRangeTest()]
+[engine:junit-jupiter]/[class:com.zenith.RotationRangeCheckTest]/[method:yawInRangeTest()]

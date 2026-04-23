@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.feature.player.CollisionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:13:45.541Z" hostname="DESKTOP-IU9580N" time="0.632">
+  <properties/>
+  <testcase name="collideZPushOutTest2()" classname="com.zenith.feature.player.CollisionTest" time="0.302"/>
+  <testcase name="collideZPushOutTest()" classname="com.zenith.feature.player.CollisionTest" time="0.155"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

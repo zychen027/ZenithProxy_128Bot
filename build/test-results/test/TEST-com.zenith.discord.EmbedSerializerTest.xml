@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.discord.EmbedSerializerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:14:59.615Z" hostname="DESKTOP-IU9580N" time="0.626">
+  <properties/>
+  <testcase name="linksTest()" classname="com.zenith.discord.EmbedSerializerTest" time="0.376"/>
+  <testcase name="testBoldReplaceMedium()" classname="com.zenith.discord.EmbedSerializerTest" time="0.014"/>
+  <testcase name="testBoldReplaceSimple()" classname="com.zenith.discord.EmbedSerializerTest" time="0.024"/>
+  <testcase name="complexTest()" classname="com.zenith.discord.EmbedSerializerTest" time="0.006"/>
+  <testcase name="codeStrTestSimple()" classname="com.zenith.discord.EmbedSerializerTest" time="0.003"/>
+  <testcase name="codeBlockTestSimple()" classname="com.zenith.discord.EmbedSerializerTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

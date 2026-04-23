@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: ZenithProxy
+Implementation-Version: 1.21.4
+Main-Class: com.zenith.Proxy
+Multi-Release: true
+Enable-Native-Access: ALL-UNNAMED
+

@@ -1,0 +1,1 @@
+[engine:junit-jupiter]/[class:com.zenith.ComponentTest]/[method:testQueueNewlineReplacement()]

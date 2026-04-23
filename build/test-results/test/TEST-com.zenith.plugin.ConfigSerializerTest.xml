@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.plugin.ConfigSerializerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:14:18.509Z" hostname="DESKTOP-IU9580N" time="13.515">
+  <properties/>
+  <testcase name="testDefaultGsonConfigSerializer()" classname="com.zenith.plugin.ConfigSerializerTest" time="13.414"/>
+  <testcase name="testKotlinObjectGsonConfigSerializer()" classname="com.zenith.plugin.ConfigSerializerTest" time="0.02"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

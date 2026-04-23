@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.plugin.PluginInstanceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:15:32.925Z" hostname="DESKTOP-IU9580N" time="7.411">
+  <properties/>
+  <testcase name="testPluginInstanceLoad()" classname="com.zenith.plugin.PluginInstanceTest" time="7.337"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

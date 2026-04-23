@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.StartupTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-04-18T09:12:12.024Z" hostname="DESKTOP-IU9580N" time="17.742">
+  <properties/>
+  <testcase name="launchZenithServer()" classname="com.zenith.StartupTest" time="17.688">
+    <failure message="org.opentest4j.AssertionFailedError: Failed to start Zenith server ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Failed to start Zenith server ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:69)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:41)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:228)
+	at com.zenith.StartupTest.launchZenithServer(StartupTest.java:22)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[
+=== test failed: launchZenithServer() ===
+[2026-04-18T09:12:24.137Z] [Proxy] [INFO] [Thread-4] zenith-test1864504993633553140.json loaded.
+[2026-04-18T09:12:24.141Z] [Proxy] [INFO] [Thread-4] launch_config.json loaded.
+[2026-04-18T09:12:25.152Z] [Proxy] [INFO] [Thread-4] Starting ZenithProxy-0.0.0
+[2026-04-18T09:12:25.153Z] [Proxy] [WARN] [Thread-4] Detected unofficial ZenithProxy development build!
+
+===
+
+]]></system-err>
+</testsuite>

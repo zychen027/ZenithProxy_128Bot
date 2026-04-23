@@ -1,0 +1,1 @@
+@H:\graaljs-community-jvm-dev-windows-amd64\graaljs-community-jvm-25.1.0-dev-windows-amd64\jvm\bin\java.exe %*

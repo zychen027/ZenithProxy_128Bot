@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.ConnectIntegTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2026-04-18T09:13:16.530Z" hostname="DESKTOP-IU9580N" time="0.028">
+  <properties/>
+  <testcase name="connectTest()" classname="com.zenith.ConnectIntegTest" time="0.004">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

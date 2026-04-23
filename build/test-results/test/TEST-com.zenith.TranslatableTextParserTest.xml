@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.TranslatableTextParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:14:41.535Z" hostname="DESKTOP-IU9580N" time="10.799">
+  <properties/>
+  <testcase name="translatableTextRenderingTest()" classname="com.zenith.TranslatableTextParserTest" time="0.877"/>
+  <testcase name="translatableTextComponentParseTest()" classname="com.zenith.TranslatableTextParserTest" time="9.85"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

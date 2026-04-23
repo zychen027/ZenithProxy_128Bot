@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zenith.mc.BlockStatePropertiesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-18T09:14:13.752Z" hostname="DESKTOP-IU9580N" time="12.422">
+  <properties/>
+  <testcase name="testMangrovePropaguleProperties()" classname="com.zenith.mc.BlockStatePropertiesTest" time="3.567"/>
+  <testcase name="testRedstoneTorchBlockProperties()" classname="com.zenith.mc.BlockStatePropertiesTest" time="0.019"/>
+  <testcase name="getWorldBlockStatePropertiesMethods()" classname="com.zenith.mc.BlockStatePropertiesTest" time="8.63"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
