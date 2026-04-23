@@ -8,6 +8,7 @@ import com.zenith.event.client.ClientDisconnectEvent;
 import com.zenith.feature.inventory.InventoryActionRequest;
 import com.zenith.feature.pathfinder.goals.GoalNear;
 import com.zenith.mc.block.Direction;
+import com.zenith.network.client.Authenticator;
 import org.cloudburstmc.math.vector.Vector3i;
 import org.geysermc.mcprotocollib.protocol.data.game.entity.player.Hand;
 import org.geysermc.mcprotocollib.protocol.data.game.item.ItemStack;
@@ -26,6 +27,7 @@ import java.util.List;
 
 import static com.github.rfresh2.EventConsumer.of;
 import static com.zenith.Globals.*;
+import static com.zenith.util.config.Config.Authentication.AccountType.OFFLINE;
 
 public class Auto128Bot extends AbstractInventoryModule {
 
@@ -35,6 +37,7 @@ public class Auto128Bot extends AbstractInventoryModule {
     private boolean isNavigating = false; // Are we currently navigating to a target
     private boolean needsReconnect = false; // Flag to trigger reconnect with new account
     private boolean justDisconnected = false; // Just disconnected, waiting to reconnect
+    private long disconnectTime = 0; // Time when disconnected, used to delay reconnect
     
     private static final int MAX_COUNTER = 128;
     private static final String LOG_FILE = "128bot.log";
@@ -175,6 +178,7 @@ public class Auto128Bot extends AbstractInventoryModule {
         
         logDebug("Disconnected from server. Reason: " + e.reason());
         justDisconnected = true;
+        disconnectTime = System.currentTimeMillis();
         
         // Switch to next account
         switchNextBot();
@@ -186,7 +190,14 @@ public class Auto128Bot extends AbstractInventoryModule {
         INVENTORY.submit(InventoryActionRequest.noAction(this, getPriority()));
 
         if (justDisconnected) {
-            // Wait for disconnect to complete
+            // Wait for disconnect to complete and delay before reconnect
+            long elapsed = System.currentTimeMillis() - disconnectTime;
+            if (elapsed < 5000) { // Wait 5 seconds after disconnect
+                return;
+            }
+            justDisconnected = false;
+            logDebug("Reconnect delay elapsed, initiating reconnect...");
+            triggerReconnect();
             return;
         }
         
@@ -332,20 +343,52 @@ public class Auto128Bot extends AbstractInventoryModule {
         }
         
         String newUsername = getCurrentUsername();
-        CONFIG.authentication.username = newUsername;
         
         logDebug("Switching to next bot account: " + newUsername);
         logDebug("New state: prefix=" + CONFIG.client.extra.auto128Bot.prefix + 
                  ", counter=" + formatCounter(counter) + 
-                 ", status=RECONNECTING");
+                 ", status=PREPARING_RECONNECT");
+        
+        // Set authentication to offline mode with the new username
+        CONFIG.authentication.accountType = OFFLINE;
+        CONFIG.authentication.username = newUsername;
+        
+        // Clear auth cache to force fresh login with new username
+        try {
+            Authenticator.INSTANCE.clearAuthCache();
+            logDebug("Auth cache cleared for new username");
+        } catch (Exception e) {
+            logDebug("Failed to clear auth cache: " + e.getMessage());
+        }
         
         justDisconnected = false;
         reset();
         
-        // Reconnect with new username
+        // Note: reconnect will be triggered by handleClientTick after delay
+        logDebug("Account switched to: " + newUsername + ", waiting for reconnect...");
+    }
+    
+    // Trigger reconnect with new username
+    private void triggerReconnect() {
+        String username = getCurrentUsername();
+        logDebug("Initiating reconnect with username: " + username);
+        logDebug("Current config username: " + CONFIG.authentication.username);
+        logDebug("Current account type: " + CONFIG.authentication.accountType);
+        
+        try {
+            Proxy.getInstance().disconnect("Auto128Bot switching account");
+        } catch (Exception e) {
+            logDebug("Disconnect error (may be already disconnected): " + e.getMessage());
+        }
+        
         EXECUTOR.schedule(() -> {
-            logDebug("Initiating reconnect with username: " + newUsername);
-            Proxy.getInstance().connectAndCatchExceptions();
-        }, 3000); // Wait 3 seconds before reconnecting
+            try {
+                logDebug("Calling connectAndCatchExceptions...");
+                Proxy.getInstance().connectAndCatchExceptions();
+            } catch (Exception e) {
+                logDebug("Reconnect failed: " + e.getMessage());
+                e.printStackTrace();
+            }
+        }, 1000); // Wait 1 second before connecting
     }
 }
